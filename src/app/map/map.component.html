@@ -1,0 +1,30 @@
+<div class="map-wrap">
+    <div class="map" #map></div>
+    <div class="find-location">
+        <div>
+            <p class="map-info">Latitude: {{ clickedLatitude }}</p>
+            <p class="map-info">Longitude: {{ clickedLongitude }}</p>
+            <h2 class="map-info">Nearby Users :</h2>
+            <ul *ngIf="displayedUsers.length > 0">
+                <li *ngFor="let user of displayedUsers" class="map-info">
+                    <span (click)="showUserCard(user)" style="cursor: pointer;">
+                        {{ user.username }}
+                    </span>
+                </li>
+            </ul>
+            <p *ngIf="noUsersFoundMessage" class="no-Users-Found-Message">{{ noUsersFoundMessage }}</p>
+        </div>
+    </div>
+
+    <p-dialog [(visible)]="visible" [style]="{ width: '50vw' }">
+        <div *ngIf="selectedUser">
+            <p class="user-info">User Name: {{ selectedUser.username }}</p>
+            <p class="user-info">Latitude: {{ selectedUser.latitude }}</p>
+            <p class="user-info">Longitude: {{ selectedUser.longitude }}</p>
+            <div id="user-card-map" style="width: 100%; height: 300px;"></div>
+            <button (click)="initializeUserCardMap(selectedUser)" class="show-on-map-button">Show on Map</button>
+        </div>
+
+    </p-dialog>
+
+</div>

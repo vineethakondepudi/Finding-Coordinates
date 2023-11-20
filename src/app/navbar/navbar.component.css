@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2C3E50;
+  color: white;
+  padding: 10px;
+}
+
+.map-logo {
+  width: 60px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 20px; /* Add spacing between the logo and heading */
+  border-radius: 30px;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+}
+
+.heading > h1 {
+    margin: 0;
+  margin-left: 550px;
+  font-family: "Times New Roman", Times, serif;
+}

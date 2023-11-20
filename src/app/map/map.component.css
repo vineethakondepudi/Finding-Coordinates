@@ -1,0 +1,66 @@
+.find-location {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F3F4;
+}
+
+
+.map-wrap {
+    display: flex;
+    height: calc(98vh - 70px);
+}
+
+.map {
+    flex: 1;
+    position: relative;
+    border: 100px solid #F2F3F4;
+}
+
+.map-info {
+    color: #0d416b
+}
+
+.no-Users-Found-Message {
+    color: red;
+    font-size: 30px;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 500px;
+    margin: 20px;
+    height: 400px;
+}
+
+.user-card p {
+    margin: 0;
+}
+
+.user-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.user-card button:hover {
+    background-color: #0056b3;
+}
+
+.show-on-map-button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.user-info {
+    color: #007BFF;
+}
