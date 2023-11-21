@@ -13,7 +13,7 @@ export class GeocodingService {
   
 
   getNearestUsers(latitude: number, longitude: number, maxDistance: number): Observable<any> {
-    const url = `${this.baseUrl}/api/nearest-users`;
+    const url = `http://172.17.15.127:3000/api/nearest-users`;
     const params = { latitude, longitude, maxDistance };
 
     return this.http.get(url, { params });
